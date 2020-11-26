@@ -1,0 +1,151 @@
+.body2 {
+  background-color: #ffffff;
+
+}
+th {
+  text-align: left;
+}
+
+.landingpage__hero-cta2:link, .landingpage__hero-cta2:visited {
+    background: #003d5c;
+    border: 1;
+    border-radius: 1.5rem;
+    color: #fefffe;
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: .5rem 2rem;
+    z-index: 1;
+	width: 250px; 
+	margin: 4px 2px;
+}
+
+.divSimple {
+  background: lightblue;
+}
+.navigation__primary-list2 {
+    background: #103d5c;
+    list-style: none;
+    min-height: 3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 200;
+    position: relative;
+    padding-left: 0;
+    margin: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.facet-container{
+  width:100%;
+  border-color: rgb(24, 82, 168);
+}
+.right {
+  float: right;
+  border: #003d5c;
+  background-color: rgb(24, 82, 168);
+}
+.left {
+  float: left;
+  background-color: rgb(24, 82, 168);
+}
+
+.middle {
+  float: right;
+  
+  background-color:rgb(24, 82, 168);
+}
+p {
+  clear: both;
+  padding-top: 1em;
+}
+.facet-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  background: #eee;
+  padding: 5px;
+  width: 143px;
+  min-height: 1.5em;
+  font-size: 0.85em;
+}
+.facet-list li {
+  margin: 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  width: 120px;
+}
+.facet-list li.placeholder {
+  height: 1.2em
+}
+.facet {
+  border: 1px solid #bbb;
+  background-color: #fafafa;
+  cursor: move;
+}
+.facet.ui-sortable-helper {
+  opacity: 0.5;
+}
+.placeholder {
+  border: 1px solid orange;
+  background-color: #fffffd;
+}
+
+.row2{
+margin: 20px;
+}
+.row3{
+  margin: 20px;
+  width: 100%;
+  background-color: black;
+  }
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Create three equal columns that floats next to each other */
+.column2 {
+  float: left;
+  border: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+.box:hover{
+  background: rgb(29, 108, 122); /* make this whatever you want */
+  }
+
+  div.absolute {
+    position: absolute;
+    top: 620px;
+    right: 0;
+    width: 100%;
+    background-color:#f0f5fa
+    /* height: 100px; */
+    /* border: 3px solid #73AD21; */
+    
+}
+div.absolute80 {
+  position: absolute;
+  top: 700px;
+  right: 0;
+  left: 0;
+  background-color:#f0f5fa;
+  /* height: 100px; */
+  /* border: 3px solid #73AD21; */
+  
+}
+.problemtext, .problemanswer{    
+  display: inline;
+  float: left;
+  }
+  
+.imageDIV{
+  margin-top: 30px;
+
+}

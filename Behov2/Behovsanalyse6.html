@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://www.kbn.com/kunde/ -->
+<html lang="no" data-user-lang-choice="no"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="preload" href="../resources/main.css" as="style">
+    <link rel="stylesheet" href="../resources/main.css">
+	<link rel="preload" href="../resources/mainHRP.css" as="style">
+    <link rel="stylesheet" href="../resources/mainHRP.css">
+	<script src="../hrp.js"></script>
+	<style>
+		.slidecontainer {
+		  width: 100%;
+		}
+
+		.slider {
+		  -webkit-appearance: none;
+		  width: 30%;
+		  height: 10;
+		  border-radius: 5px;  
+		  background: #d3d3d3;
+		  outline: none;
+		  opacity: 0.7;
+		  -webkit-transition: .2s;
+		  transition: opacity .2s;
+		}
+
+		.slider:hover {
+		  opacity: 1;
+		}
+
+		.slider::-webkit-slider-thumb {
+		  -webkit-appearance: none;
+		  appearance: none;
+		  width: 15px;
+		  height: 15px;
+		  border-radius: 50%; 
+		  background: #4CAF50;
+		  cursor: pointer;
+		}
+
+		.slider::-moz-range-thumb {
+		  width: 15px;
+		  height: 15px;
+		  border-radius: 50%; 
+		  background: #4CAF50;
+		  cursor: pointer;
+		}
+		p{
+			display: inline;
+			font-size: 20px;
+		}
+	</style>
+		<div  style="float: auto; margin-left: 50px;">
+			<div class="breadcrumb">
+				<a href="..\PerspektivHovedside.html">Perspektiv</a>
+				<span>/</span>
+				Skole
+				<span>/</span>
+				Behovsanalyse
+				<span>/</span>
+				Klasseinndeling
+			</div>
+			<br>
+		</div>
+	</head>
+	
+	<body class="body2"> 
+
+		<div class=" column large-12">
+			<h2 class="resource-link-block__heading">Kommunens klassedelingstall</h2>
+			<br>
+			I dette steget skal vi definere kommunens delingstall for barne- og ungdomstrinn. Kommunens delingstall er antall
+			 elever maksimalt per klasse og denne informasjonen benyttes til å etablere klasseromsbehov Analysen benytter,
+			 henholdsvis, 28 og 30 elever per klasse for barne- og ungdomstrinnet som defaultverdier. 
+			 Dersom kommunen har et annet delingstall i skoleplan enn 28 og 30 elever, kan dette endres i dette steget. 
+
+
+		</div>
+		<br><br>
+		<div class="resource-link-block__text-container column">
+
+			<h3>Delingstall barneskole</h3>
+
+			<div class="slidecontainer">
+				<input type="range" min="15" max="32" value="28" class="slider" id="myRange">
+				<p >Valgt delingstall: <span id="demo"></span></p>
+			</div>
+
+			<h3 style="margin-top: 40px;">Delingstall ungdomsskole</h3>
+
+			<div class="slidecontainer">
+				<input type="range" min="15" max="32" value="30" class="slider" id="myRange2">
+				<p>Valgt delingstall: <span  id="demo2"></span></p>
+			</div>
+			<br>
+		<tr>
+					<th>
+						<a class="landingpage__hero-cta " href="Behovsanalyse5.html" style="visibility: block;">Tilbake</a>
+					</th>
+					<th> 
+						<a class="landingpage__hero-cta" href="" style="visibility: collapse;">Eksporter figur</a>
+						<a class="landingpage__hero-cta" href="" style="visibility: collapse;">Eksporter exceldata</a>
+						<a class="landingpage__hero-cta" href="" style="visibility: collapse;">Hent data</a>
+					</th>
+					<th>
+						<a class="landingpage__hero-cta " href="Behovsanalyse7.html" style="visibility: block;">Videre</a>
+					</th>
+				</tr>
+		</div>
+		<script>
+				var slider = document.getElementById("myRange");
+				var output = document.getElementById("demo");
+				output.style.fontWeight='bold';
+
+
+				output.innerHTML = slider.value;
+
+				slider.oninput = function() {
+					output.innerHTML = this.value;
+					
+
+				}
+				
+				var slider2 = document.getElementById("myRange2");
+				var output2 = document.getElementById("demo2");
+				output2.style.fontWeight='bold';
+				output2.innerHTML = slider2.value;
+
+				slider2.oninput = function() {
+					output2.innerHTML = this.value;
+					}		
+		</script>
+	</body>
+</html>
